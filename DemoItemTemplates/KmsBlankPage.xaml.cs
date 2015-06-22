@@ -1,29 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using DemoItemTemplates.Common;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+using System.Linq;
 
 
 namespace DemoItemTemplates
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Default blank page
+    /// @createdBy  	    Ros Haitovich, 31/05/2015
+    /// @lastModifiedBy  	Ros Haitovich, 04/06/2015
+    /// * refactoring
     /// </summary>
-    public sealed partial class KmsBlankPage : Page
+    public sealed partial class KmsBlankPage : BasicPage
     {
         public KmsBlankPage()
         {
             this.InitializeComponent();
         }
+
+        protected override void LoadState(LoadStateEventArgs e)
+        {
+            base.LoadState(e);
+        }
+
+        protected override void SaveState(SaveStateEventArgs e)
+        {
+            base.SaveState(e);
+        }
+
+        /// <summary>
+        /// Return back to the add products page (1st step)
+        /// </summary>
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigateBack();
+        }
+
     }
 }
