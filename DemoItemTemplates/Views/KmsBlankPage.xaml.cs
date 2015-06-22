@@ -1,19 +1,18 @@
-﻿using DemoItemTemplates.Common;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using System.Linq;
 
 
-namespace DemoItemTemplates
+namespace $rootnamespace$.Views
 {
     /// <summary>
     /// Default blank page
     /// @createdBy  	    Ros Haitovich, 31/05/2015
-    /// @lastModifiedBy  	Ros Haitovich, 04/06/2015
+    /// @lastModifiedBy  	$username$,    $$
     /// * refactoring
     /// </summary>
-    public sealed partial class KmsBlankPage : BasicPage
+    public sealed partial class $safeitemname$ : BasicPage
     {
-        public KmsBlankPage()
+        public $safeitemname$()
         {
             this.InitializeComponent();
         }

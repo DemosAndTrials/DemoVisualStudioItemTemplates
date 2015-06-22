@@ -1,9 +1,9 @@
 ﻿<common:BasicPage 
-    x:Class="DemoItemTemplates.KmsBlankPage"
+    x:Class="DemoItemTemplates.Views.KmsBlankPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:DemoItemTemplates"
-    xmlns:common="using:DemoItemTemplates.Common"
+    xmlns:local="using:$rootnamespace$"
+    xmlns:common="using:$rootnamespace$.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -26,7 +26,7 @@
         <!-- Back button and page title -->
         <StackPanel Grid.Row="0" Background="White" Orientation="Horizontal">
             <AppBarButton x:Name="backButton" Icon="Back" Margin="0,10,0,0" Click="BackButton_Click" VerticalAlignment="Center" RequestedTheme="Light"/>
-            <TextBlock Text="Sélection des Produits" Style="{StaticResource HeaderTextBlockStyle}" Foreground="Black" VerticalAlignment="Center"/>
+            <TextBlock Text="Page title" Style="{StaticResource HeaderTextBlockStyle}" Foreground="Black" VerticalAlignment="Center"/>
             <TextBlock Text="{Binding SelectedAccount.Name}" Foreground="White" Style="{StaticResource SubheaderTextBlockStyle}" VerticalAlignment="Center" Margin="20,-11,0,0" FontSize="28"/>
         </StackPanel>
         <!--Page number-->
